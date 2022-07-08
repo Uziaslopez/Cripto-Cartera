@@ -1,0 +1,32 @@
+<h1>Portfolios</h1>
+<mat-divider></mat-divider>
+<br>
+
+<div fxLayout="column"
+fxLayout.xs="column"
+fxLayoutAlign="center"
+fxLayoutGap="15">
+
+    <div fxFlex="18"
+    fxFlex.sm="23"
+    fxFlex.xs="45"
+    *ngFor="let cartera of portfolios">
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-subtitle>{{ cartera.id }}</mat-card-subtitle>
+        <mat-card-title>{{ cartera.name }}</mat-card-title>
+        <mat-card-subtitle>{{ cartera.monedas }}</mat-card-subtitle>
+
+    </mat-card-header>
+
+
+    <mat-card-actions>    
+        <a button mat-button 
+        color="accent"
+        routerLink="/cripto-monedas/comprar">Comprar</a>
+    </mat-card-actions>
+
+</mat-card>
+    </div>
+</div>

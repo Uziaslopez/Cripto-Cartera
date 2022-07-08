@@ -1,0 +1,73 @@
+<br>
+<div fxLayoutAlign="center">
+<mat-card>
+  <mat-card-title>Agregar Criptomoneda</mat-card-title>
+  <mat-card-header>
+  <div fxFlex="80" fxLayout="column">
+    <mat-form-field>
+      <mat-label>Id criptomoneda</mat-label>
+      <input matInput type="text" [(ngModel)]="moneda.id" required/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Nombre criptomoneda</mat-label>
+      <input matInput type="text" [(ngModel)]="moneda.name" required />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Official website</mat-label>
+      <input matInput type="text" [(ngModel)]="moneda.url"/>
+    </mat-form-field>
+  </div>
+</mat-card-header>
+  <mat-card-actions>
+
+    <a mat-raised-button
+     color="primary"
+     (click)="guardar()">
+       <mat-icon>edit</mat-icon>
+       GUARDAR</a>
+    <a mat-button 
+    color="warn"
+    routerLink="/cripto-monedas/listado">
+    <mat-icon>delete</mat-icon>
+    CANCELAR</a>
+
+</mat-card-actions>
+</mat-card>
+</div>
+<br>
+<br>
+<div fxLayoutAlign="center">
+<mat-card>
+  <mat-card-title>Agregar Portfolio</mat-card-title>
+  <mat-card-header>
+  <div fxFlex="80" fxLayout="column">
+    <mat-form-field>
+      <mat-label>Id portfolio</mat-label>
+      <input matInput type="text" [(ngModel)]="cartera.id" required/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Nombre portfolio</mat-label>
+      <input matInput type="text" [(ngModel)]="cartera.name" required />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Monedas</mat-label>
+      <input matInput type="text" [(ngModel)]="cartera.monedas"/>
+    </mat-form-field>
+  </div>
+</mat-card-header>
+  <mat-card-actions>
+
+    <a mat-raised-button
+     color="primary"
+     (click)="grabar()">
+       <mat-icon>edit</mat-icon>
+       GUARDAR</a>
+    <a mat-button 
+    color="warn"
+    routerLink="/cripto-monedas/portfolios">
+    <mat-icon>delete</mat-icon>
+    CANCELAR</a>
+
+</mat-card-actions>
+</mat-card>
+</div>

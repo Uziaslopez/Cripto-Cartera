@@ -1,0 +1,50 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="push">  
+        <mat-toolbar>
+            <span>Menú</span>
+            <span class="spacer"></span>
+            <button mat-icon-button
+            (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <a routerLink="./listado"
+            mat-list-item
+            (click)="sidenav.toggle()">
+            <mat-icon mat-list-icon>label</mat-icon>
+                <span>Lista de Criptomonedas</span>
+            </a>            
+            <a routerLink="./portfolios"
+            mat-list-item
+            (click)="sidenav.toggle()">
+            <mat-icon mat-list-icon>work_outline</mat-icon>
+                <span>Portfolios</span>
+            </a>
+            <a routerLink="./agregar"
+            mat-list-item
+            (click)="sidenav.toggle()">
+            <mat-icon mat-list-icon>add</mat-icon>
+                <span>Agregar</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav >
+
+    <mat-toolbar>
+        <button mat-icon-button
+        (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+        
+        <button mat-button
+        (click)="logout()">
+        Salir</button>
+
+    </mat-toolbar>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-container>
