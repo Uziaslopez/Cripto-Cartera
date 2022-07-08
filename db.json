@@ -1,0 +1,76 @@
+{
+  "portfolios": [
+    {
+      "id": "1",
+      "name": "Ramon Garcia",
+      "monedas": "1.243 Bitcoin, 10.745 Cardano."
+    },
+    {
+      "id": "2",
+      "name": "Gladys Torres",
+      "monedas": "4 Bitcoin, 168 BNB, 573 Solana."
+    },
+    {
+      "id": "3",
+      "name": "Andrew Night",
+      "monedas": "8.340 BUSD, 674 Cardano, 26.827 Dogecoin."
+    },
+    {
+      "id": "4",
+      "name": "Mike Ross",
+      "monedas": "300 Bitcoin, 15 Ethereum, 25.000 Tether."
+    }
+  ],
+  "criptomonedas": [
+    {
+      "id": "BTC",
+      "name": "Bitcoin",
+      "url": "https://www.bitcoin.org"
+    },
+    {
+      "id": "ETH",
+      "name": "Ethereum",
+      "url": "https://www.ethereum.org"
+    },
+    {
+      "id": "USDT",
+      "name": "Tether",
+      "url": "https://www.tether.to"
+    },
+    {
+      "id": "USDC",
+      "name": "USD coin",
+      "url": "https://www.coinbase.com/usdc/"
+    },
+    {
+      "id": "BNB",
+      "name": "BNB",
+      "url": "https://www.binance.com"
+    },
+    {
+      "id": "BUSD",
+      "name": "Binance USD",
+      "url": "https://www.binance.com/en/busd"
+    },
+    {
+      "id": "XRP",
+      "name": "XRP",
+      "url": "https://www.ripple.com"
+    },
+    {
+      "id": "ADA",
+      "name": "Cardano",
+      "url": "https://docs.cardano.org/introduction"
+    },
+    {
+      "id": "SOL",
+      "name": "Solana",
+      "url": "https://www.solana.com"
+    },
+    {
+      "id": "DOGE",
+      "name": "Dogecoin",
+      "url": "https://www.dogecoin.com"
+    }
+  ]
+}
